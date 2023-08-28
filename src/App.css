@@ -7,10 +7,13 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  padding-left: 5vw;
+  padding-top: 20px;
+}
+
+.logo img {
+  width: 20vw;
 }
 
 .App-header {
@@ -27,6 +30,277 @@
 .App-link {
   color: #61dafb;
 }
+nav {
+  z-index: 10001;
+}
+
+.navbar {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link{
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+.bar {
+  width: 23px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+.nav-links {
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.nav-links.visible {
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 100%;
+  background-color: #495E57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .5s ease-in-out;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 1em;
+}
+/*-------------HEADER-----------*/
+
+.header {
+  background-color: #495E57;
+  padding: 40px 0;
+}
+
+.header section{
+  color: #EDEFEE;
+  padding: 10px 13%;
+  position: relative;
+}
+
+h2 {
+  color: #F4CE14;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.banner p {
+  font-size: 20px;
+  max-width: 520px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #F4CE14;
+  color: black;
+  padding: 14px 18px;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.img-banner {
+  position: absolute;
+  right: 15%;
+  top: 15%;
+  width: 400px;
+}
+
+.img-banner img {
+  width: 120%;
+  height: 500px;
+  border-radius: 20px;
+}
+
+form, .comfirm{
+  padding: 10px 13%;
+}
+
+.formField{
+  padding: 50px 40px;
+}
+
+.btnReceive:active{
+  transform: scale(.99);
+}
+
+
+input, label{
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#book-date, #book-time, #book-guests, #book-occasion{
+  background: #bdbdbd43;
+  padding: 8px 24px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+.btnReceive input{
+  padding: 12px 16px;
+  margin-top: 20px;
+  background: #495e57;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+
+}
+
+.comfirm span{
+  color: blue;
+}
+
+/*---------------MENU-----------*/
+.menu-container {
+  margin: 110px auto;
+  padding: 10px 13%;
+}
+
+.menu-container h2 {
+  color: black;
+}
+
+.menu-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.menu-container img {
+  width: 100%;
+  height: 233px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+}
+
+.menu-items {
+  height: 500px;
+  width: 350px;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.menu-content .heading{
+  align-items: center;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-content p {
+  text-align: justify;
+}
+
+.orderBtn{
+  padding: 10px 15px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 20px;
+}
+
+
+
+/*---------------FOOTER--------*/
+footer section{
+  padding: 10px 13%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-info img{
+  margin-top: 12px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.company-info p{
+  text-align: justify;
+  width: 320px;
+  margin-right: 20px;
+}
+
+footer h3{
+  font-size: 18px;
+}
+
+footer ul{
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li{
+  padding: 8px 0;
+}
+
+
+/*---------------EFFECTS--------*/
+
+nav ul li a:hover {
+  color: #495E57;
+  text-decoration: underline solid #495E57;
+  padding: 0 20px;
+  transition: all .5s;
+}
+
+.menu-items:hover {
+  box-shadow: 10px 8px 20px rgb(155, 155, 155);
+  transform: scale(1.03);
+  transition: all .4s;
+  border: none;
+}
+
+button:active {
+  transform: scale(.9);
+}
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +310,50 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .logo {
+    padding-left: 5vw;
+    padding-top: 0px;
+  }
+  .logo img {
+    width: 50vw;
+  }
+  .menu-icon{
+    display: block;
+    margin-right: 10px;
+  }
+  .nav-links{
+    display: none;
+    margin-top: 2rem;
+    margin-right: 0;
+  }
+  .nav-links.visible {
+    display: flex;
+    background: #333333;
+    z-index: 1000;
+    padding: 20px 0;
+  }
+
+  a:link, a:visited{
+    color:white
+  }
+  nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  .img-banner {
+    display: none;
+  }
+  footer section{
+    padding: 10px 8%;
+    flex-direction: column;
+  }
+  .company-info p{
+    width: 100%;
+  }
+  .footer-container a:visited, .footer-container a:link{
+    color: black;
+  }
+}
+
