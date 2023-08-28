@@ -1,6 +1,7 @@
 import React from 'react'
 import recipes from '../extras/recipes'
 import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom';
 
 export default function Menu() {
 
@@ -31,7 +32,7 @@ export default function Menu() {
     <div className='menu-container'>
         <div className='menu-header'>
             <h2>This weeks specials!</h2>
-            <button>Online Menu</button>
+            <Link to={"/menu"}><button>Online Menu</button></Link>
         </div>
 
         {/* MENU CARDS*/}
